@@ -1,0 +1,22 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: lightgrey;
+    text-align: center;
+    margin-top: 80px;
+    border: solid;
+}
+.container .countdown{
+    font-size: 150px;
+    color: red;
+}
+
+.container #quizz{
+    font-size: 80px;
+    font-weight: 500;
+}
+.container .resultado{
+    font-size: 40px;
+}
