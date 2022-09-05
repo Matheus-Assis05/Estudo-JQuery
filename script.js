@@ -10,8 +10,8 @@ $(function(){ //DEFININDO O JQUERY
     
     //receber resposta do usuario e calcular
     $("#btn").click(function(){
-        const resposta = Number($("#resposta").val())
-        console.log(resposta)
+        const usuarioRes = Number($("#resposta").val())
+        
         })
 
 
@@ -42,20 +42,36 @@ $(function(){ //DEFININDO O JQUERY
     });
 
     //operadores aleatorios
-    let num1 = $("#num1").html()    
-    let num2 = $("#num2").html()
-    let operador = $("#operador").html()
+    
+    let operaVetor = ["+", "-", "/", "*"] //vetor com operadores
+    let i = Math.floor((Math.random() * 4) + 0); //indice aleatorio de 0 a 4
+
+    let num1 = Math.floor((Math.random() * 100) + 1); //numero aleatório de 1 a 100
+    let num2 = Math.floor((Math.random() * 100) + 1); //numero aletorio de 1 a 100
+    let operador = operaVetor[i];   //operador aleatório
+    
+
+    $("#num1").html(num1) 
+    $("#num2").html(num2)
+    $("#operador").html(operador)
 
     //resultado
     function evaluate(param1, param2, operator) {
         return eval(param1 + operator + param2);
       }
 
-      console.log(evaluate(num1, num2, operador))
+    
       
 
 
-    console.log(num1, operador, num2)
+
+
+    //CONSOLE LOGS PARA TESTE
+    console.log("Operador: ",operador)  
+    console.log("Resultado: ", evaluate(num1, num2, operador))
+    console.log("i: ", i)
+    console.log("Operação: ", num1, operador, num2)
+    console.log("Numero Digitado:", usuarioRes)
 });
 
 
