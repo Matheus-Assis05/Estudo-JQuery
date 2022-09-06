@@ -1,22 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
+/*ajustando a box*/
 .container{
-    background-color: lightgrey;
+    background-image: linear-gradient(to right bottom, #dbe4f2, #ccd0db, #bcbdc4, #ababae, #999999); /*gradiente*/
     text-align: center;
     margin-top: 80px;
     border: solid;
+    border-radius: 30px;
+
+    width: 1300px;
+    margin-left: 290px;
 }
+/*contador*/
 .container .countdown{
     font-size: 150px;
     color: red;
 }
-
+/*operaçao*/
 .container #quizz{
     font-size: 80px;
     font-weight: 500;
 }
+/*tempo-esgotado*/
 .container .resultado{
     font-size: 40px;
+}
+/*form*/
+.container #wpResposta form input{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.container #wpResposta form input:focus{
+    border: 6px, solid;
+}
+/*botão*/
+.container #wpResposta form button{
+    color: white;
+    background-color:rgba(210, 92, 92, 1);
+    
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.container #wpResposta form button:hover{
+    background-color:rgba(210, 92, 92, 0.5);
 }

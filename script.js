@@ -1,15 +1,14 @@
 
 $(function(){ //DEFININDO O JQUERY
-    
-    
+
     //FUNÇÕES
     
-    
+    confirm('PRONTO PARA COMEÇAR?'); //alert trava e timer so começa no OK
 
     //receber resposta do usuario e calcular
         $("#formBtn").click(function(){
             let resUser = $('#resposta').val() //recebendo na variavel o valor digitado no input
-            let certo = false; //certo declarado em falso padrao para encurtar o if removendo nescessidade de else
+            let certo;
             
             if(evaluate(num1, num2, operador) == resUser){
                 certo = true
@@ -20,6 +19,10 @@ $(function(){ //DEFININDO O JQUERY
             if(certo)
             {
                     alert('PARABENS, VOCE ESTÁ CERTO')
+            }
+            else
+            {
+                alert('VOCE ERROU!')
             }
 
               
@@ -51,6 +54,7 @@ $(function(){ //DEFININDO O JQUERY
             $("#resposta").remove(); //comando do jquery que remove um elemento por inteiro
 
             $("#formBtn").html('FIM') //altera o botao para fim
+        
         }
 
 

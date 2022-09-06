@@ -1,7 +1,5 @@
 # QuizzMatematico-JQuery
-#PROJETO EM ANDAMENTO
 
-Quiz matematico utilizando JQuery
+Quiz matemático simples usando JQuery.
 
-#Adições a serem feitas:
-*contador de respostas certas e erradas
+Sinta-se livre para usar o código em algum projeto!
